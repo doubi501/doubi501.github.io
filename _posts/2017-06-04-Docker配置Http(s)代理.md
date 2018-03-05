@@ -15,7 +15,7 @@ tags:                               #标签
 ```
 $ mkdir -p /etc/systemd/system/docker.service.d
 ```
-2. 创建/etc/systemd/system/docker.service.d/http-proxy.conf文件,添加HTTP_PROXY环境变量
+2. 创建/etc/systemd/system/docker.service.d/http-proxy.conf文件,在文件中添加HTTP_PROXY环境变量
 3. [proxy-addr]和[proxy-port]分别改成实际情况的代理地址和端口, 如果还有内部的不需要使用代理来访问的Docker registries，那么还需要指定NO_PROXY环境变量：
 ```
 [Service]
